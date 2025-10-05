@@ -632,7 +632,7 @@
         }
 
         window.watchAd = function() {
-            const reward = globalSettings.adReward || 50;
+            const reward = globalSettings.adReward || 0;
             tg.showConfirm(`Watch an ad to earn ${reward} coins?`, async (confirmed) => {
                 if (confirmed) {
                     // Simulate ad watching for simplicity
